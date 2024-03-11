@@ -1,8 +1,9 @@
 def calc_value(x: float, poly: list[float]) -> float:
     y = poly[0]
+    my_x = x
     for c in poly[1:]:
-        y += x * c
-        x *= x
+        y += my_x * c
+        my_x *= x
     return y
 
 

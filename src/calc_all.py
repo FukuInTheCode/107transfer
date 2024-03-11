@@ -6,7 +6,6 @@ def calc_all(polys: list[list[float]]) -> int:
     ys = []
     result = [1 for i in range(1001)]
 
-    print(polys)
     for poly in polys:
         ys.append(calc_array(poly))
     for i in range(0, len(ys), 2):
