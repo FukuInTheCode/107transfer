@@ -1,5 +1,7 @@
 #!/usr/bin/python3
 
+from src.calc_dens import calc_all_dens
+
 
 def is_float(num):
     try:
@@ -28,4 +30,4 @@ def args_array(args: list[str]) -> list[list[float]]:
 
 def argv_to_array(argv: list[str]) -> int:
     result = args_array(argv)
-    return 0
+    return calc_all_dens(result)

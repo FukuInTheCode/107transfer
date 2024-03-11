@@ -6,9 +6,10 @@ def calc_all(polys: list[list[float]]) -> int:
     ys = []
     result = [1 for i in range(1001)]
 
+    print(polys)
     for poly in polys:
         ys.append(calc_array(poly))
-    for i in range(len(ys), 2):
+    for i in range(0, len(ys), 2):
         for j in range(len(ys[i])):
             result[j] *= ys[i][j] / ys[i + 1][j]
     return display_result([i / 1000 for i in range(1001)], result)

@@ -1,4 +1,5 @@
 from src.calc_array import calc_array
+from src.calc_all import calc_all
 
 
 def calc_all_dens(argv: list[list[float]]) -> int:
@@ -8,4 +9,4 @@ def calc_all_dens(argv: list[list[float]]) -> int:
         dens.append(calc_array(argv[i]))
         if 0 in dens[-1]:
             exit(84)
-    return 0
+    return calc_all(argv)
