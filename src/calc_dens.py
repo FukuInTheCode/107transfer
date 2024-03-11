@@ -7,5 +7,5 @@ def calc_all_dens(argv: list[list[float]]) -> int:
     for i in range(1, len(argv), 2):
         dens.append(calc_array(argv[i]))
         if 0 in dens[-1]:
-            return 84
+            exit(84)
     return 0
