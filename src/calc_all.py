@@ -2,7 +2,7 @@ from src.calc_array import calc_array
 from src.display_result import display_result
 
 
-def calc_all(polys: List[list[float]]) -> int:
+def calc_all(polys: list[list[float]]) -> int:
     ys = []
     for poly in polys:
         ys.append(calc_array(poly))
